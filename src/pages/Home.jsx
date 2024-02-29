@@ -20,7 +20,7 @@ function Home() {
   return (
         <ul>
             {
-                posts.map( post => <li key={post.id}> <h4><Link to={`/posts${post.id}`}>{post.title}</Link></h4> <p>{post.body}</p> </li>)
+                posts.map( post => <li key={post.id}> <h4><Link to={`/posts/${post.id}`}>{post.title}</Link></h4> <p>{post.body}</p> </li>)
             }
         </ul>
     );
